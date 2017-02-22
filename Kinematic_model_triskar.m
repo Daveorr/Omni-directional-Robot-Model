@@ -55,9 +55,10 @@ phidot = (1/r)*B.'*VL;
 Jm = 2.7e-7;  % Inertia of the motor [Kg/m^2]
 JL = 8e-5;    % Inertia of the load  [Kg/m^2]
  J = 4.6e-3;  % Rotational inertia of the robot [Kg/m^2]
- n = 17.5;      % Reduction Ratio
+ n = 14;      % Reduction Ratio ( or 17.5)
 cm = 5e-8;    % Damping coefficient motor
-cl = 1e-6;   % Damping coefficient load
+%cl = 1e-6;   % Damping coefficient load
+cl = 0;
  m = 2.36;    % Mass of the robot [Kg]
  M = [m,0,0;0,m,0;0,0,J]; % Mass matrix of the robot
  
